@@ -11,7 +11,7 @@ class Terminal extends Component {
  componentDidMount() {
       setTimeout(() => {
         window.location.replace(`/about`)
-      }, 28000);
+      }, 20000);
     }
   
 
@@ -72,7 +72,7 @@ class Terminal extends Component {
           </div>
         </Delay>
         
-        <Delay wait={10000}>
+        <Delay wait={9000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
             <Typist 
@@ -81,15 +81,16 @@ class Terminal extends Component {
               {description_list[0]}
             </Typist>
           </div>
-        </Delay>
-        
-        <Delay wait={14000}>
+        </Delay> 
+        <Delay wait={18000}>
           <div className="row">
             <FontAwesomeIcon icon={ faAngleRight } className="angle-right" style={{ color: 'white', fontSize:'15px'}}/>
+            Sign In (Yes / No): &nbsp;
             <Typist 
               cursor={{ hideWhenDone: true }}
             >
-              {description_list[1]}
+              <Typist.Delay ms={700} />
+              Yes
             </Typist>
           </div>
         </Delay>
