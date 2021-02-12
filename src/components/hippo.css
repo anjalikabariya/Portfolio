@@ -1,0 +1,60 @@
+.eyes-follow-tired {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+      .eyelid {
+        position: absolute;
+        width: 100px;
+        height: 10px;
+        background-color: rebeccapurple;
+        z-index: 400;
+        top: -120px;
+        animation: blink 4.5s infinite ease-in alternate;
+        animation-delay: 1s;
+      }
+      @keyframes blink {
+        0% {
+          top: -120px;
+        }
+        95% {
+          top: -120px;
+        }
+        100% {
+          top: -50px;
+        }
+      }
+  
+      .eyes {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+        .eye {
+          display: flex;
+          justify-content: space-between;
+          border-radius: 50%;
+          height: 40px;
+          width: 40px;
+          background-color: #f3efef;
+        }
+          .pupil {
+            position: relative;
+            background-color: #382e25;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+          }
